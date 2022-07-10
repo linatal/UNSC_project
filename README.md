@@ -2,6 +2,10 @@
 
 Processing skripts for  UN Security Council Meeting Records corpus from Schönfeld et al. 2019: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/KGVSYH
 
+### Exclude files with presidential speeches
+Input is dir-path to raw files (speaker name must be included in string). Creates two folders with excluded speeches and selected speeches.
+```python exclude_presidential_spchs.py --input $DIR_PATH``` 
+
 ### Text preprocessing
 Skipt to delete string until first column (speaker-name, language) and linebreaks within paragraphs. WPath-input can point to directory or file (each file within folder will be processed). The input-file will be overwritten.  
 ```python delete_linebreaks.py --input $INPUT_PATH``` 
